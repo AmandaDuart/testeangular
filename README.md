@@ -1,7 +1,5 @@
 
-<center>
-  <img src="https://github.com/AmandaDuart/testeangular/src/assets/logo.jpg" width="900"></img>
-</center>  
+
 # Testeangular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.

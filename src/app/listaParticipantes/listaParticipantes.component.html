@@ -1,0 +1,54 @@
+<div class="text-center">
+    <div class="card-body">
+        <h3 class="card-title"> Lista de Participantes</h3>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-sm-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Observações</th>
+                    <th scope="col">Turma</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let participante of participantes">
+                    <th scope="row">{{participante.id}}</th>
+                    <td>{{participante.nome}}</td>
+                    <td>{{participante.email}}</td>
+                    <td>
+                        <div class="alert alert-warning">
+                            {{participante.observacoes}}
+                        </div>
+                    </td>
+                    <td>{{participante.turma?.id}}</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info mx-3">Editar</button>
+                        <button type="button" class="btn btn-outline-danger">Deletar</button>
+
+                    </td>
+                </tr>
+                <tr *ngFor="let participante of participantes">
+                    <th scope="row">{{participante.id}}</th>
+                    <td>{{participante.nome}}</td>
+                    <td>{{participante.email}}</td>
+                    <td>
+                        <div class="alert alert-warning">
+                            {{participante.observacoes}}
+                        </div>
+                    </td>
+                    <td>{{participante.turma?.id}}</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info mx-3">Editar</button>
+                        <button type="button" class="btn btn-outline-danger">Deletar</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
